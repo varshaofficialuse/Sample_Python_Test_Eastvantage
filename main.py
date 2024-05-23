@@ -107,8 +107,5 @@ def get_nearby_addresses(location: Location, db: Session = Depends(get_db)):
 
 
 
-
-
-
 if __name__ == "__main__":
     uvicorn.run(port=ServerDetails.port.value,host=ServerDetails.host.value,reload=True,app='main:app')
